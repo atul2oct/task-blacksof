@@ -27,3 +27,35 @@ html, body{
 *:hover::-webkit-scrollbar-thumb {
   visibility: visible;
 }
+
+.gif-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
+  text-align: center;
+  background: url('assests/Images/ezgif.gif') no-repeat center center;
+  background-size: cover;
+  background-clip: text;
+  color: transparent; 
+  display: inline-block;
+}
+
+.custom-rectangle {
+  position: absolute;
+  width: 1455px;
+  height: 134px;
+  top: 250px;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 3, 7, 0) 110.33%);
+}
+
+.ellipse-section {
+  position: absolute;
+  width: 1826px;
+  height: 126px;
+  top: 50px;
+  background-color: #0061BA;
+  opacity: 0.1;
+  transform: rotate(-3.28deg);
+  border-radius: 50%; /* This creates the ellipse shape */
+}

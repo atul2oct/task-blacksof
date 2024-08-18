@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, matchPath, useLocation } from 'react-router-dom'
 import logo from '../../assests/Images/smart lights_logo.svg'
 import { NavbarLinks } from '../../data/navbar-links';
+import Button from './Button';
 
 const Navbar = () => {
     const location = useLocation();
@@ -12,7 +13,7 @@ const Navbar = () => {
     }
     
   return (
-    <div className={`flex h-24 items-center justify-center border-b-[1px] border-b-richblack-700 ${location.pathname !== '/' ? "bg-richblack-800" : ""}transition-all duration-200`}>
+    <div className={`flex h-24 items-center justify-center border-b-[1px] border-b-[#FFFFFF1A] ${location.pathname !== '/' ? "bg-richblack-800" : ""}transition-all duration-200`}>
         
         <div className='flex w-11/12 justify-between items-center max-w-maxContent'>
         {/* logo */}
@@ -36,9 +37,8 @@ const Navbar = () => {
                         ))
                     }
 
-                    <button className="bg-gradient-to-r from-[#3661FF] to-[#0085FF] w-44 h-14 rounded-sm px-6 py-4 text-white font-normal text-[20px] leading-[23.6px]">
-                        Login
-                    </button>
+                    
+                    <Button text="Login" customClass="bg-gradient-to-r from-[#3661FF] to-[#0085FF]"/>
                 </ul>
             </nav>
         </div>
