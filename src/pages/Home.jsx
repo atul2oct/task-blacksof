@@ -1,6 +1,7 @@
 import React from 'react'
 import DarkSection from '../components/homepage/DarkSection'
 import LightSection from '../components/homepage/LightSection'
+import GreySection from '../components/homepage/GreySection'
 
 const Home = () => {
   return (
@@ -11,7 +12,7 @@ const Home = () => {
         {/* section-2 light section */}
         <LightSection/>
         {/* section-3 grey section */}
-        <h1>sdcsdvsd</h1>
+        <GreySection/>
         {/* section-4 light section */}
         {/* section-5 footer section */}
       </section>
