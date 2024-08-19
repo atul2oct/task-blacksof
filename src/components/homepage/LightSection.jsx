@@ -15,7 +15,7 @@ const LightSection = () => {
         <div className=" flex flex-col justify-center w-3/4 gap-6">
         {/* sub heading */}
           <div className='flex flex-col justify-center gap-4 w-1/2'>
-            <SubHeading color="#3661FF" text="Ecosystem" gradient="bg-gradient-to-l from-transparent via-transparent"/>
+            <SubHeading text="Ecosystem" gradient="bg-gradient-to-l from-transparent via-transparent to-[#3661FF]"/>
             <p className="font-inter font-normal text-[48px] leading-[68px] tracking-[0.01em] text-black">How does a smart street light ecosystem work?</p>
           </div>
 
@@ -60,7 +60,7 @@ const LightSection = () => {
                 <div className="relative w-[167px] h-[167px]">
                   <div className="absolute w-[167px] h-[167px] border-dashed border-[1.72px] border-[#D3D3D3] rounded-[41.133px]"></div>
                   <div className="absolute w-[132.57px] h-[132.57px] left-[17.28px] top-[17.28px] bg-gradient-to-b from-white to-[#F3FDFF] border-[1.64532px] border-[#EAEAEA] shadow-[3.29px_4.11px_12.34px_rgba(206,206,206,0.05)] rounded-[27.5464px] flex justify-center items-center">
-                    <img src={gateway_png}/>
+                    <img src={gateway_png} alt='gateway png'/>
                   </div>
                 </div>
                 <div className="flex flex-col items-center gap-[9px]">
@@ -78,7 +78,7 @@ const LightSection = () => {
                 <div className="relative w-[167px] h-[167px]">
                   <div className="absolute w-[167px] h-[167px] border-dashed border-[1.72px] border-[#D3D3D3] rounded-[41.133px]"></div>
                   <div className="absolute w-[132.57px] h-[132.57px] left-[17.28px] top-[17.28px] bg-gradient-to-b from-white to-[#F3FDFF] border-[1.64532px] border-[#EAEAEA] shadow-[3.29px_4.11px_12.34px_rgba(206,206,206,0.05)] rounded-[27.5464px] flex justify-center items-center">
-                    <img src={cloud_based}/>
+                    <img src={cloud_based} alt='cloud based png'/>
                   </div>
                 </div>
                 <div className="flex flex-col items-center gap-[9px]">
@@ -109,7 +109,7 @@ const LightSection = () => {
                 <div className="relative w-[167px] h-[167px]">
                   <div className="absolute w-[167px] h-[167px] border-dashed border-[1.72px] border-[#D3D3D3] rounded-[41.133px]"></div>
                   <div className="absolute w-[132.57px] h-[132.57px] left-[17.28px] top-[17.28px] bg-gradient-to-b from-white to-[#F3FDFF] border-[1.64532px] border-[#EAEAEA] shadow-[3.29px_4.11px_12.34px_rgba(206,206,206,0.05)] rounded-[27.5464px] flex justify-center items-center">
-                    <img src={users_png}/>
+                    <img src={users_png} alt='users png'/>
                   </div>
                 </div>
                 <div className="flex flex-col items-center gap-[9px]">
@@ -125,7 +125,7 @@ const LightSection = () => {
                 <div className="relative w-[167px] h-[167px]">
                   <div className="absolute w-[167px] h-[167px] border-dashed border-[1.72px] border-[#D3D3D3] rounded-[41.133px]"></div>
                   <div className="absolute w-[132.57px] h-[132.57px] left-[17.28px] top-[17.28px] bg-gradient-to-b from-white to-[#F3FDFF] border-[1.64532px] border-[#EAEAEA] shadow-[3.29px_4.11px_12.34px_rgba(206,206,206,0.05)] rounded-[27.5464px] flex justify-center items-center">
-                    <img src={evaluation_png}/>
+                    <img src={evaluation_png} alt='evaluation image'/>
                   </div>
                 </div>
                 <div className="flex flex-col items-center gap-[9px]">

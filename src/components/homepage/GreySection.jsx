@@ -1,5 +1,6 @@
 import React from 'react'
 import SubHeading from '../common/SubHeading'
+import ExploreMore from './ExploreMore'
 
 const GreySection = () => {
   return (
@@ -13,9 +14,7 @@ const GreySection = () => {
           </p>
         </div>
 
-        <div></div>
-
-        <div></div>
+        <ExploreMore/>
       </div>
     </div>
   )

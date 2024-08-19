@@ -68,3 +68,11 @@ html, body{
   width: 100%; 
   height: 100vh; 
 }
+
+.bg-cardBtn-gradient {
+  background: linear-gradient(270deg, rgba(203, 227, 255, 0.06) 0%, rgba(111, 178, 255, 0.4) 0%, rgba(203, 227, 255, 0.06) 49.87%, rgba(174, 210, 251, 0.4) 100%);
+
+  border: 1.5px solid transparent; /* Solid border with transparent color */
+  border-image: linear-gradient(180deg, #869FFB 0%, rgba(54, 97, 255, 0.44) 100%, #3661FF 100%);
+  border-image-slice: 1; /* Ensures the gradient is applied across the border */
+}
