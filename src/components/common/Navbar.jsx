@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link, matchPath, useLocation } from 'react-router-dom';
 import logo from '../../assests/Images/smart lights_logo.svg';
 import { NavbarLinks } from '../../data/navbar-links';
 import Button from './Button';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'; // You might need to install @heroicons/react
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const Navbar = () => {
     const location = useLocation();
@@ -12,6 +12,19 @@ const Navbar = () => {
     const matchRoute = (route) => {
         return matchPath({ path: route }, location.pathname);
     };
+    const menuRef = useRef()
+    useEffect(()=>{
+        // when click outside menu div and image menu will close
+        const handler = (event)=>{
+          if(!menuRef.current.contains(event.target)){
+            setIsMobileMenuOpen(false)
+          }
+        }
+        document.addEventListener('mousedown',handler)
+        return () => {
+          document.removeEventListener('mousedown',handler)
+        }
+      },[])
 
     return (
         <div className={`flex h-24 items-center justify-center border-b-[1px] border-b-[#FFFFFF1A] ${location.pathname !== '/' ? "bg-richblack-800" : ""} transition-all duration-200`}>
@@ -22,7 +35,7 @@ const Navbar = () => {
                 </Link>
 
                 {/* Mobile Menu Button */}
-                <div className='block md:hidden'>
+                <div className='block md:hidden z-20'>
                     <button
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                         className='text-richblack-25'
@@ -36,7 +49,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Nav Links */}
-                <nav className={`flex-col md:flex-row flex items-center gap-x-6 text-richblack-25 ${isMobileMenuOpen ? 'flex' : 'hidden'}`}>
+                <nav className={`${isMobileMenuOpen ? 'flex' : 'hidden'} md:flex flex-col md:flex-row items-center gap-x-6 text-richblack-25 `}>
                     <ul className='flex items-center gap-x-6'>
                         {NavbarLinks.map((link, index) => (
                             <li key={index}>
@@ -52,7 +65,7 @@ const Navbar = () => {
                     <Button text="Login" customClass="hidden md:block bg-gradient-to-r from-[#3661FF] to-[#0085FF]" />
 
                     {/* Mobile Menu */}
-                    <div className={`fixed top-0 right-0 w-2/3 h-full bg-richblack-800 md:hidden transition-transform transform ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+                    <div ref={menuRef} className={`z-10 fixed top-0 right-0 w-2/3 h-2/6 bg-richblack-800 md:hidden transition-transform transform ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                         <ul className='flex flex-col items-center mt-20 space-y-6'>
                             {NavbarLinks.map((link, index) => (
                                 <li key={index}>

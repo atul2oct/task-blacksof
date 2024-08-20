@@ -14,16 +14,16 @@ const LightSection = () => {
       {/* group */}
         <div className=" flex flex-col justify-center w-3/4 gap-6">
         {/* sub heading */}
-          <div className='flex flex-col justify-center gap-4 w-1/2'>
+          <div className='flex flex-col justify-center gap-4 lg:w-1/2'>
             <SubHeading text="Ecosystem" gradient="bg-gradient-to-l from-transparent via-transparent to-[#3661FF]"/>
-            <p className="font-inter font-normal text-[48px] leading-[68px] tracking-[0.01em] text-black">How does a smart street light ecosystem work?</p>
+            <p className="font-inter font-normal text-3xl lg:text-5xl lg:leading-[68px] tracking-[0.01em] text-black">How does a smart street light ecosystem work?</p>
           </div>
 
           {/* images wla */}
           <div className='flex flex-col items-center justify-center gap-24 w-full'>
 
           {/* upper */}
-            <div className='relative flex items-center justify-between gap-[25px] w-full'>
+            <div className='lg:relative flex flex-col lg:flex-row items-center justify-between gap-[25px] w-full'>
 
             {/* street light */}
               <div className="flex flex-col items-start justify-center w-[274px] h-[269px] gap-6">
@@ -53,10 +53,10 @@ const LightSection = () => {
                 </div>
               </div>
 
-              <div className="absolute w-1/4 h-0 left-[20%] top-[30%] border-dashed border-[3px] border-[#CDCDCD]"></div>
+              <div className="hidden lg:block absolute w-1/4 h-0 left-[20%] top-[30%] border-dashed border-[3px] border-[#CDCDCD]"></div>
 
               {/* gateway */}
-              <div className="absolute flex flex-col items-center justify-center w-[242px] h-[272px] gap-[25px] left-1/2 inset-y-0 -translate-x-1/2">
+              <div className="lg:absolute flex flex-col items-center justify-center w-[242px] h-[272px] gap-[25px] left-1/2 lg:inset-y-0 lg:-translate-x-1/2">
                 <div className="relative w-[167px] h-[167px]">
                   <div className="absolute w-[167px] h-[167px] border-dashed border-[1.72px] border-[#D3D3D3] rounded-[41.133px]"></div>
                   <div className="absolute w-[132.57px] h-[132.57px] left-[17.28px] top-[17.28px] bg-gradient-to-b from-white to-[#F3FDFF] border-[1.64532px] border-[#EAEAEA] shadow-[3.29px_4.11px_12.34px_rgba(206,206,206,0.05)] rounded-[27.5464px] flex justify-center items-center">
@@ -71,7 +71,7 @@ const LightSection = () => {
                 </div>
               </div>
 
-              <div className="absolute w-1/4 h-0 right-[15%] top-[30%] border-dashed border-[3px] border-[#CDCDCD]"></div>
+              <div className=" hidden lg:blockabsolute w-1/4 h-0 right-[15%] top-[30%] border-dashed border-[3px] border-[#CDCDCD]"></div>
 
               {/* Cloud-based Management System */}
               <div className="flex flex-col items-start justify-center w-[167px] h-[271px] gap-[25px]">
@@ -92,7 +92,7 @@ const LightSection = () => {
             </div>
 
             {/* middle */}
-            <div className="relative flex flex-row items-center justify-center w-full">
+            <div className="hidden lg:block relative flex flex-row items-center justify-center w-full">
               {/* Line 15 */}
               <div className="absolute w-[60px] h-0 left-1/2 -translate-x-1/2 -top-10 border-dashed border-[3px] border-[#CDCDCD] rotate-90"></div>
 
