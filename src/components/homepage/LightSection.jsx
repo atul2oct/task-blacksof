@@ -71,7 +71,7 @@ const LightSection = () => {
                 </div>
               </div>
 
-              <div className=" hidden lg:blockabsolute w-1/4 h-0 right-[15%] top-[30%] border-dashed border-[3px] border-[#CDCDCD]"></div>
+              <div className="hidden lg:block absolute w-1/4 h-0 right-[15%] top-[30%] border-dashed border-[3px] border-[#CDCDCD]"></div>
 
               {/* Cloud-based Management System */}
               <div className="flex flex-col items-start justify-center w-[167px] h-[271px] gap-[25px]">
