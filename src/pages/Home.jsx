@@ -3,6 +3,7 @@ import DarkSection from '../components/homepage/DarkSection'
 import LightSection from '../components/homepage/LightSection'
 import GreySection from '../components/homepage/GreySection'
 import Footer from '../components/common/Footer'
+import LightSection2 from '../components/homepage/LightSection2'
 
 const Home = () => {
   return (
@@ -14,8 +15,8 @@ const Home = () => {
         <LightSection/>
         {/* section-3 grey section */}
         <GreySection/>
-        {/* section-4 light section */}
-        
+        {/* section-4 light section 2 */}
+        <LightSection2/>
         {/* section-5 footer section */}
         <Footer/>
       </section>
